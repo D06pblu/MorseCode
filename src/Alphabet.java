@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class Alphabet {
+public class Alphabet { //Задаем алфавит с помощью мапы. Но нужно две мапы, ибо через значения не ищет индексы.
     static HashMap<String, String> alph = new HashMap<>();
 
     public static void setAlph() {
@@ -31,7 +31,7 @@ public class Alphabet {
         alph.put("Ш", "пиии-пиии-пиии-пиии ");
         alph.put("Щ", "пиии-пиии-та-пиии ");
         alph.put("Ь", "пиии-та-та-пиии ");
-        alph.put("Ъ", "пиии-та-пиии-пиии ");
+        alph.put("Ы", "пиии-та-пиии-пиии ");
         alph.put("Э", "та-та-пиии-та-та ");
         alph.put("Ю", "та-та-пиии-пиии ");
         alph.put("Я", "та-пиии-та-пиии ");

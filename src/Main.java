@@ -1,14 +1,30 @@
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Alphabet.setAlph();
+        AlphabetThroughArrayList.setChars();
+        AlphabetThroughArrayList.setCodes();
+        System.out.println("Для зашифровки послания введите 1. Для дешифровки введите 2.");
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
         LineReader lineReader = new LineReader();
-        lineReader.lineReader();
-        lineReader.arrayParser();
-        for (String s : LineReader.letters){
-            Alphabet.biper(s.toUpperCase());
+        switch (i) {
+            case 1:
+                lineReader.lineReader();
+                lineReader.charsParser();
+                for (String s : LineReader.letters) {
+                    AlphabetThroughArrayList.biper(s.toUpperCase());
+                }
+                break;
+            case 2:
+                lineReader.lineReader();
+                lineReader.codeParser();
+                for (String s : LineReader.letters) {
+                    AlphabetThroughArrayList.typer(s);
+                }
+                break;
         }
     }
 }

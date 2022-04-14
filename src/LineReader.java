@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class LineReader {
+public class LineReader { //Парсер, который съедает вводимые данные, парсит их на символы и запихивает в список
     public static ArrayList<String> array = new ArrayList<>();
     public static ArrayList<String> letters = new ArrayList<>();
 
@@ -19,10 +19,17 @@ public class LineReader {
 
         }
     }
-    public void arrayParser(){
+    public void charsParser(){ //Для шифровки букв
         String[] temp;
         for (String str : array){
             temp=str.split("");
+            Collections.addAll(letters, temp);
+        }
+    }
+    public void codeParser(){ //Для дешифровки кодов
+        String[] temp;
+        for (String str : array){
+            temp=str.split(" ");
             Collections.addAll(letters, temp);
         }
     }
