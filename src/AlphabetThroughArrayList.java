@@ -74,7 +74,7 @@ static void setCodes(){
     codes.add("пиии-та-пиии");
     codes.add("та-пиии-та-та");
     codes.add("пиии-пиии");
-    codes.add("пиии-та ");
+    codes.add("пиии-та");
     codes.add("пиии-пиии-пиии");
     codes.add("та-пиии-пиии-та");
     codes.add("та-пиии-та");

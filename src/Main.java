@@ -10,15 +10,15 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int i = scanner.nextInt();
         LineReader lineReader = new LineReader();
-        switch (i) {
-            case 1:
+        switch (i) {        //Выбираем какую операцию запускать
+            case 1:         //Зашифровку
                 lineReader.lineReader();
                 lineReader.charsParser();
                 for (String s : LineReader.letters) {
                     AlphabetThroughArrayList.biper(s.toUpperCase());
                 }
                 break;
-            case 2:
+            case 2:         //Расшифровку
                 lineReader.lineReader();
                 lineReader.codeParser();
                 for (String s : LineReader.letters) {
